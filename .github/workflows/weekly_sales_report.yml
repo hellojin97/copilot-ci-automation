@@ -1,0 +1,43 @@
+name: Weekly Sales Report Generation
+
+on:
+  schedule:
+    # 매주 월요일 오전 9시 (UTC+9 = UTC 0시)
+    - cron: '0 0 * * 1'
+  workflow_dispatch:  # 수동 실행 옵션 추가
+
+env:
+  SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+  EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+  RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install Poetry
+      uses: snok/install-poetry@v1
+      with:
+        version: 1.5.1
+        virtualenvs-create: true
+        virtualenvs-in-project: true
+
+    - name: Install dependencies
+      run: poetry install --no-interaction
+        
+    - name: Generate and send sales report
+      run: |
+        poetry run python sales_data_analysis.py
+      env:
+        SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+        EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
