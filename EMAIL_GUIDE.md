@@ -13,11 +13,13 @@
 ## 🛠️ 사용 방법
 
 ### 1. 기본 실행 (대화형)
+
 ```bash
 uv run python sales_data_analysis.py
 ```
 
 ### 2. 코드로 이메일 전송
+
 ```python
 from sales_data_analysis import SalesDataAnalyzer
 
@@ -38,13 +40,15 @@ success = analyzer.send_email_with_report(
 ## 📧 이메일 설정
 
 ### Gmail 사용 시 (권장)
+
 1. **2단계 인증 활성화**: Google 계정 > 보안 > 2단계 인증
-2. **앱 비밀번호 생성**: 
+2. **앱 비밀번호 생성**:
    - Google 계정 > 보안 > 앱 비밀번호
    - "메일" 선택 후 생성
 3. **생성된 16자리 비밀번호 사용**
 
 ### 다른 이메일 서비스
+
 - **Outlook/Hotmail**: `smtp-mail.outlook.com`, 포트 587
 - **Yahoo**: `smtp.mail.yahoo.com`, 포트 587
 - **네이버**: `smtp.naver.com`, 포트 587
@@ -52,15 +56,18 @@ success = analyzer.send_email_with_report(
 ## 📊 생성되는 보고서 내용
 
 ### 1. 전체 요약
+
 - 총 매출, 총 판매량, 평균 주문금액, 총 주문수
 
 ### 2. 상세 분석
+
 - 카테고리별 분석
 - 지역별 분석  
 - 영업사원별 성과
 - 상위 제품 (Top 10)
 
 ### 3. 데이터 품질 보고
+
 - 처리된 데이터 이슈 목록
 
 ## 🔧 함수 매개변수
@@ -84,6 +91,7 @@ success = analyzer.send_email_with_report(
 3. **2단계 인증**: Gmail의 경우 2단계 인증 필수
 
 ### 환경변수 사용 예시
+
 ```python
 import os
 
@@ -112,6 +120,7 @@ success = analyzer.send_email_with_report(
    - 보고서 생성 완료 후 이메일 전송
 
 ### 디버깅 팁
+
 - 먼저 보고서 생성이 정상 완료되는지 확인
 - 단일 수신자로 테스트 후 여러 명으로 확장
 - Gmail 외 다른 서비스 사용 시 SMTP 설정 확인
@@ -131,6 +140,7 @@ success = analyzer.send_email_with_report(
 ## 📞 지원
 
 문제가 발생하면 다음을 확인해주세요:
+
 1. Python 환경 및 패키지 설치 상태
 2. CSV 파일 형식 및 경로
 3. 이메일 계정 설정 (2단계 인증, 앱 비밀번호)
