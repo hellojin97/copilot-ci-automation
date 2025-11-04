@@ -559,9 +559,24 @@ def main() -> None:
     
     if sender_email and email_password and recipient_email:
         print("\n📧 환경변수에서 이메일 설정을 찾았습니다. 자동으로 이메일을 전송합니다...")
+        print(f"🔍 디버깅: 발신자 이메일 - {sender_email[:3]}***@{sender_email.split('@')[1] if '@' in sender_email else 'unknown'}")
+        print(f"🔍 디버깅: 수신자 이메일 - {recipient_email[:3]}***")
         
         # 수신자 이메일 처리 (쉼표로 구분된 경우)
         recipient_emails = [email.strip() for email in recipient_email.split(',') if email.strip()]
+        
+        # 이메일 주소 유효성 검사
+        import re
+        email_pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        
+        if not re.match(email_pattern, sender_email):
+            print(f"❌ 발신자 이메일 형식이 올바르지 않습니다: {sender_email}")
+            return
+            
+        for email in recipient_emails:
+            if not re.match(email_pattern, email):
+                print(f"❌ 수신자 이메일 형식이 올바르지 않습니다: {email}")
+                return
         
         # 이메일 전송
         success = analyzer.send_email_with_report(
