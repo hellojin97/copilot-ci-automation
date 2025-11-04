@@ -1,0 +1,69 @@
+Date,ProductID,ProductName,Category,Quantity,UnitPrice,TotalPrice,Region,Salesperson
+2025-09-01,P1001,Alpha Widget,Electronics,12,50,600,North,John Doe
+2025-09-01,P2003,Orion T-shirt,Apparel,60,18,1080,South,Leo Martin
+2025-09-01,P4001,Astra Cookware,Kitchen,10,150,1500,West,Grace Lee
+2025-09-02,P1002,Beta Gadget,Electronics,8,120.5,964,South,Jane Smith
+2025-09-02,P3001,Delta Device,Home Goods,25,75.25,1881.25,East,Sue Kim
+2025-09-02,P1001,alpha widget,Electronics,7,50,350,North,John Doe
+2025-09-03,P2001,Gamma Gear,Apparel,35,25,875,North,John Doe
+2025-09-03,P3002,Zeta Tool,home goods,15,99.99,1499.85,West,Peter Jones
+2025-09-03,P4002,Nova Blender,Kitchen,,220,,East,Nina Chen
+2025-09-04,P1003,Charlie Sensor,electronics,30,35.5,1065,West,Peter Jones
+2025-09-04,P2002,Epsilon Shirt,Apparel,55,15,825,South,jane smith
+2025-09-04,P3001,Delta Device,Home Goods,18,75.25,1354.5,North,John Doe
+2025-09-05,P1001,Alpha Widget,Electronics,11,50,550,South,Jane Smith
+2025-09-05,P4001,Astra Cookware,Kitchen,8,150,1200,East,Sue Kim
+2025-09-06,P2003,Orion T-shirt,Apparel,70,18,1260,West,Peter Jones
+2025-09-06,P1002,Beta Gadget,Electronics,5,120.5,602.5,North,
+2025-09-07,P3002,Zeta Tool,Home Goods,20,99.99,1999.8,East,Sue Kim
+2025-09-07,P2001,Gamma Gear,apparel,40,25,1000,South,Leo Martin
+2025-09-08,P1003,Charlie Sensor,Electronics,22,35.5,781,West,Grace Lee
+2025-09-08,P4002,Nova Blender,Kitchen,12,220,2640,North,John Doe
+2025-09-09,P2002,Epsilon Shirt,Apparel,65,15,975,East,Nina Chen
+2025-09-09,P1001,Alpha Widget,Electronics,14,50,700,South,Jane Smith
+2025-09-10,P3001,Delta Device,Home Goods,30,75.25,2257.5,West,Peter Jones
+2025-09-10,P2003,orion t-shirt,Apparel,80,18,1440,North,John Doe
+2025-09-11,P1002,Beta Gadget,Electronics,10,120.5,1205,East,Sue Kim
+2025-09-11,P4001,Astra Cookware,kitchen,15,150,2250,South,Leo Martin
+2025-09-12,P2001,Gamma Gear,Apparel,28,25,700,West,Grace Lee
+2025-09-12,P3002,Zeta Tool,Home Goods,18,99.99,1799.82,North,John Doe
+2025-09-13,P1003,Charlie Sensor,Electronics,40,35.5,1420,South,Jane Smith
+2025-09-13,P2002,Epsilon Shirt,Apparel,,15,,East,Nina Chen
+2025-09-14,P4002,Nova Blender,Kitchen,9,220,1980,West,Peter Jones
+2025-09-14,P1001,Alpha Widget,Electronics,10,50,500,North,John Doe
+2025-09-15,P3001,Delta Device,Home Goods,22,75.25,1655.5,South,leo martin
+2025-09-15,P2003,Orion T-shirt,Apparel,90,18,1620,East,Sue Kim
+2025-09-16,P1002,beta gadget,Electronics,15,120.5,1807.5,West,Grace Lee
+2025-09-16,P4001,Astra Cookware,Kitchen,11,150,1650,North,John Doe
+2025-09-17,P2001,Gamma Gear,Apparel,45,25,1125,South,Jane Smith
+2025-09-17,P3002,Zeta Tool,Home Goods,25,99.99,2499.75,East,Nina Chen
+2025-09-17,P1003,Charlie Sensor,Electronics,35,35.5,1242.5,West,Peter Jones
+2025-09-18,P2002,Epsilon Shirt,Apparel,75,15,1125,North,
+2025-09-18,P4002,Nova Blender,Kitchen,14,220,3080,South,Leo Martin
+2025-09-19,P1001,Alpha Widget,Electronics,9,50,450,East,Sue Kim
+2025-09-19,P3001,Delta Device,home goods,28,75.25,2107,West,Grace Lee
+2025-09-20,P2003,Orion T-shirt,Apparel,100,18,1800,North,John Doe
+2025-09-20,P1002,Beta Gadget,Electronics,12,120.5,1446,South,Jane Smith
+2025-09-21,P4001,Astra Cookware,Kitchen,18,150,2700,East,Nina Chen
+2025-09-21,P2001,Gamma Gear,Apparel,50,25,1250,West,Peter Jones
+2.00E+05,P3002,Zeta Tool,Home Goods,30,99.99,2999.7,North,John Doe
+2025-09-22,P1003,Charlie Sensor,Electronics,50,35.5,1775,South,Leo Martin
+2025-09-22,P2002,Epsilon Shirt,Apparel,85,15,1275,East,Sue Kim
+2025-09-23,P4002,Nova Blender,Kitchen,11,220,2420,West,Grace Lee
+2025-09-23,P1001,Alpha Widget,electronics,13,50,650,North,John Doe
+2025-09-24,P3001,Delta Device,Home Goods,32,75.25,2408,South,Jane Smith
+2025-09-24,P2003,Orion T-shirt,apparel,110,18,1980,East,Nina Chen
+2025-09-25,P1002,Beta Gadget,Electronics,20,120.5,2410,West,Peter Jones
+2025-09-25,P4001,Astra Cookware,Kitchen,20,150,3000,North,John Doe
+2025-09-26,P2001,Gamma Gear,Apparel,60,25,1500,South,Leo Martin
+2025-09-26,P3002,Zeta Tool,Home Goods,35,99.99,3499.65,East,Sue Kim
+2025-09-27,P1003,Charlie Sensor,Electronics,60,35.5,2130,West,Grace Lee
+2025-09-27,P2002,Epsilon Shirt,Apparel,95,15,1425,North,John Doe
+2025-09-28,P4002,Nova Blender,Kitchen,16,220,3520,South,Jane Smith
+2025-09-28,P1001,Alpha Widget,Electronics,18,50,900,East,Nina Chen
+2025-09-28,P0000,Invalid Product,,0,0,0,Unknown,
+2025-09-29,P3001,Delta Device,Home Goods,35,75.25,2633.75,West,Peter Jones
+2025-09-29,P2003,Orion T-shirt,Apparel,120,18,2160,North,john doe
+2025-09-30,P1002,Beta Gadget,Electronics,22,120.5,2651,South,Leo Martin
+2025-09-30,P4001,Astra Cookware,Kitchen,25,150,3750,East,Sue Kim
+2025-09-30,P2001,Gamma Gear,Apparel,70,25,1750,West,Grace Lee
