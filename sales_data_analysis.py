@@ -552,7 +552,33 @@ def main() -> None:
     print("분석 결과 파일:")
     print(f"  워드 보고서: {results['word_report']}")
     
-    # 이메일 전송 여부 확인
+    # 환경변수에서 이메일 설정 확인 (GitHub Actions용)
+    sender_email = os.getenv('SENDER_EMAIL')
+    email_password = os.getenv('EMAIL_PASSWORD')
+    recipient_email = os.getenv('RECIPIENT_EMAIL')
+    
+    if sender_email and email_password and recipient_email:
+        print("\n📧 환경변수에서 이메일 설정을 찾았습니다. 자동으로 이메일을 전송합니다...")
+        
+        # 수신자 이메일 처리 (쉼표로 구분된 경우)
+        recipient_emails = [email.strip() for email in recipient_email.split(',') if email.strip()]
+        
+        # 이메일 전송
+        success = analyzer.send_email_with_report(
+            docx_file_path=results['word_report'],
+            sender_email=sender_email,
+            sender_password=email_password,
+            recipient_emails=recipient_emails,
+            subject=f"📊 주간 판매 데이터 분석 보고서 - {datetime.now().strftime('%Y-%m-%d')}"
+        )
+        
+        if success:
+            print("🎉 자동 이메일 전송이 완료되었습니다!")
+        else:
+            print("⚠️ 보고서는 생성되었지만 이메일 전송에 실패했습니다.")
+        return
+    
+    # 환경변수가 없는 경우 대화형 모드
     print("\n" + "="*50)
     send_email = input("📧 이메일로 보고서를 전송하시겠습니까? (y/n): ").lower().strip()
     
