@@ -25,9 +25,12 @@
 
 ## ⚙️ 요구사항
 
-- Python 3.9+
+- Python 3.12+
 - `pandas`
 - `python-docx`
+- `matplotlib`
+- `numpy`
+- `seaborn`
 
 ## 🚀 사용 방법
 
@@ -40,7 +43,17 @@
    cd copilot-ci-automation
    ```
 
-2. **의존성 설치 (Poetry 사용)**
+2. **의존성 설치 (uv 사용 - 권장)**
+
+   ```bash
+   # uv 설치 (없는 경우)
+   pip install uv
+   
+   # 의존성 설치
+   uv sync
+   ```
+
+   **또는 Poetry 사용**
 
    ```bash
    pip install poetry
@@ -50,6 +63,10 @@
 3. **스크립트 실행**
 
    ```bash
+   # uv 사용 (권장)
+   uv run python sales_data_analysis.py
+   
+   # 또는 Poetry 사용
    poetry run python sales_data_analysis.py
    ```
 
